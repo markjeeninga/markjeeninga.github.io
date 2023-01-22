@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="icon" href="./images/icon.png">
+<link rel="stylesheet" href="main.css" type="text/css" />
+<!--- <title>Code and programming</title> --->
+<title>Mark Jeeninga ∷ Academic webpage</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<div id="main-container">
+<div id="header-container">
+<div id="header">
+<div id="header-icon-text-container">
+<div id="header-text-container">
+<a href="index.html">Mark Jeeninga ∷ Academic webpage</a>
+</div>
+</div>
+<div id="main">
+<button class="openbtn" onclick="toggleNav()">☰</button>
+</div>
+</div>
+</div>
+<div id="layout">
+<div id="layout-menu-container">
+<div id="layout-menu">
+<div class="menu-category">About</div>
+<div class="menu-item"><a href="index.html">Home&nbsp;and&nbsp;news</a></div>
+<div class="menu-item"><a href="bio.html">Bio&nbsp;and&nbsp;CV</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="code.html" class="current">Code&nbsp;and&nbsp;programming</a></div>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+</div> <!-- <div id="layout-menu"> -->
+</div> <!-- <div id="layout-menu-container"> -->
+<div id="layout-content-container">
+<div id="layout-content">
+<div id="toptitle">
+<h1>Code and programming</h1>
+<div id="subtitle"></div>
+</div>
+<ul>
+<li><p>In the paper <a href="https://doi.org/10.1016/j.sysconle.2022.105146" target=&ldquo;blank&rdquo;>&ldquo;Braess’ paradox for power flow feasibility and parametric uncertainties in DC power grids with constant-power loads&rdquo;</a> it was shown that the topologies of most MATPOWER cases, when interpreted as a DC power grid, are subject to Braess’ paradox for power flow feasiblity. The code can be found <a href="https://github.com/markjeeninga/DC-CPL-Braess-paradox" target=&ldquo;blank&rdquo;>in this GitHub repository</a>. The code is written in <a href="https://julialang.org/" target=&ldquo;blank&rdquo;>Julia</a> and makes use of the <a href="https://juliapackages.com/p/powermodels" target=&ldquo;blank&rdquo;>PowerModels package</a></p>
+</li>
+</ul>
+</div> <!-- <div id="layout-content-container"> -->
+</div> <!--- <div id="layout"> --->
+</div> <!--- <div id="main-container"> --->
+<script>
+function toggleNav() {
+ 	document.getElementById("layout").classList.toggle("menu-open");
+}
+function closeNav() {
+	document.getElementById("layout").classList.remove("menu-open");
+}
+</script>
+</body>
+</html>
